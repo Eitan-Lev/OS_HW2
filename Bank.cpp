@@ -223,7 +223,7 @@ void* ATM_Run(void* cmds) {
 			} else {
 				try	{
 					int resTransfer = bankAccountsMap.transferMoneyAndSaveBalances(accountNumber, password,
-							dstAccountNumber, sum, &srcNewBalance, &dstNewBalance, &frozenAccount);//Result used for debugging
+							dstAccountNumber, sum, &srcNewBalance, &dstNewBalance, &frozenAccount);//Result may be used for debugging
 					if (srcNewBalance == ERROR_VALUE || dstNewBalance == ERROR_VALUE) {
 						UNEXPECTED_EXCEPTION();//Transfer should have been successful. For debugging, should never happen.
 					} else {

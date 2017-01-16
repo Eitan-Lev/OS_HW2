@@ -1,6 +1,6 @@
 # Makefile for the HW2
 CC = g++
-CFLAGS = -g -Wall -pthread 
+CFLAGS = -g -Wall -lpthread 
 CCLINK = $(CC)
 OBJS = Bank.o bankAccount.o bankMap.o Exceptions.o MacroBank.h
 RM = rm -f
